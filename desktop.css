@@ -1,0 +1,208 @@
+.navbar {
+    height: 10vh;
+}
+
+.nav-logo h2 {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+
+.bar {
+    display: none;
+}
+
+.desk-menu {
+    display: block;
+}
+
+.desk-menu a {
+    margin-left: 25px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.desk-menu a:hover {
+    transition: all 1.5s ease;
+    color: black;
+}
+
+/* home part start here */
+.home-section{
+    height: 90vh;
+}
+.home-logo {
+    width: 150px;
+    height: 150px;
+    right: -740px;
+}
+
+.home-logo img {
+    width: 150px;
+    height: 150px;
+}
+
+.home-logo-2 {
+    width: 150px;
+    height: 150px;
+    top: 60vh;
+    left: 35px;
+}
+
+.home-logo-2 img {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.home-info {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 40px;
+}
+
+.home-info h1 {
+    margin-bottom: 25px;
+}
+
+.home-info span {
+    color: #8845f4;
+}
+
+/* about part start here */
+.about-section{
+    height: 100vh;
+}
+.section-heading {
+    font-size: 2.5rem;
+}
+
+.hr-dot {
+    border-width: 15px;
+    width: 140px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.about-logo,
+.about-tit {
+    flex-basis: 45%;
+    padding-left: 10px;
+}
+
+.about-logo {
+    margin-top: 20vh;
+}
+
+.about-logo img {
+    width: 280px;
+    height: 280px;
+    margin-top: 10vh;
+}
+
+.about-tit {
+    text-align: justify;
+    position: absolute;
+    width: 50%;
+    top: 9vh;
+    right: 50px;
+}
+
+.about-tit small {
+    font-size: 1.2rem;
+    line-height: 3rem;
+}
+
+.about-btn {
+    display: none;
+}
+
+.about-info {
+    flex-basis: 55%;
+    height: fit-content;
+    margin-top: 25vh;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.about-info hr {
+    margin: 35px 0px;
+    padding-left: 45px;
+    color: white;
+}
+
+.about-dis-btn {
+    display: block;
+}
+.about-dis-btn button {
+    width: 230px;
+    font-size: 2rem;
+    padding: 25px;
+    border: none;
+    border-radius: 5px;
+    background: #191919;
+    color: white;
+}
+.about-dis-btn button:hover{
+    background: #8845f4;
+    color: white;
+    transition: 1s ease-in-out;
+}
+/* project part start here */
+.project-container{
+    display: flex;
+    padding-top: 20vh;
+    overflow: hidden;
+    padding-left: 1vh;
+}
+.project-card{
+    width: 400px;
+    height: 420px;
+}
+.project-card img{
+    width: 100%;
+    height: 250px;
+}
+.project-info small{
+    font-size: 1.5rem;
+}
+.project-btn{
+    margin: 15px 0px;
+}
+.project-btn a{
+    font-size: 1.6rem;
+    padding: 12px;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+/* skill part start here */
+.skill-section h3{
+    font-size: 2.5rem;
+    letter-spacing: 2.5px;
+}
+.skill-section hr{
+    width: 120px;
+}
+.skill-card{
+    font-size: 2.2rem;
+    padding: 15px;
+}
+.skill-card li{
+    margin-left: 10px;
+    margin-bottom: 60px;
+}
+/* footer part start here */
+.link-container button{
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+}

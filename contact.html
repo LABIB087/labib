@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <title>Labib Ahammed</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        outline: none;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+
+    body {
+        width: 100%;
+        background: white;
+    }
+
+    .section-heading {
+        font-size: 1.5rem;
+        padding: 10px 0px;
+        text-align: center;
+    }
+
+    .hr-dot {
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+        border-style: dotted;
+        border-width: 5px;
+        border-bottom: none;
+    }
+
+    .contact-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .form-container {
+        width: 100%;
+        height: fit-content;
+        padding: 15px 20px;
+        margin-top: 20px;
+    }
+
+    .form-card {
+        width: fit-content;
+        padding: 15px;
+        display: block;
+        margin: 0 auto;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .form-card label {
+        padding-left: 6px;
+        margin-bottom: 6px;
+    }
+
+    .form-card input {
+        width: 100%;
+        height: 45px;
+        border: 2px solid black;
+        padding: 5px 10px;
+        border-radius: 6px;
+        margin: 15px 0px;
+        transition: 2s;
+    }
+
+    .form-card input::placeholder {
+        color: black;
+        padding-left: 15px;
+    }
+
+    .form-card textarea {
+        width: 100%;
+        height: 140px;
+        resize: none;
+        border-radius: 5px;
+        border: 2px solid black;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-card textarea::placeholder {
+        padding-left: 15px;
+        padding-top: 5px;
+        color: black;
+    }
+
+    .contact-btn {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 10px 0px;
+        width: 100%;
+        bottom: -15px;
+        left: -14.6px;
+    }
+
+    .sub {
+        position: absolute;
+        bottom: 0px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        background: black;
+        transition: 1s;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .res {
+        position: absolute;
+        bottom: 0px;
+        right: -29px;
+        width: 100px;
+        height: 40px;
+        border: none;
+        background: black;
+        transition: 1s;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .form-card input:hover {
+        border-color: lawngreen;
+        border-radius: 50px 0px 50px 0px;
+    }
+
+    .sub:hover {
+        border-radius: 0px 37px 0px 5px;
+    }
+
+    .res:hover {
+        border-radius: 37px 0px 5px 0px;
+    }
+
+    @media screen and (min-width:600px) {
+        .section-heading {
+            font-size: 2.5rem;
+            padding: 10px 0px;
+            text-align: center;
+        }
+
+        .hr-dot {
+            width: 130px;
+            display: block;
+            margin: 0 auto;
+            border-style: dotted;
+            border-width: 15px;
+            border-bottom: none;
+        }
+
+        .form-container {
+            width: 100%;
+            height: fit-content;
+            padding: 15px 20px;
+            margin-top: 200px;
+        }
+
+        .form-card {
+            width: fit-content;
+            width: 70%;
+            padding: 15px;
+            display: block;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .form-card label {
+            padding-left: 6px;
+            margin-bottom: 6px;
+            font-size: 1.8rem;
+        }
+
+        .form-card input {
+            width: 100%;
+            height: 85px;
+            border: 2px solid black;
+            padding: 5px 10px;
+            border-radius: 6px;
+            margin: 25px 0px;
+            transition: 2s;
+            font-size: 2rem;
+        }
+
+        .form-card input::placeholder {
+            color: black;
+            padding-left: 25px;
+        }
+
+        .form-card textarea {
+            width: 100%;
+            height: 240px;
+            resize: none;
+            border-radius: 5px;
+            border: 2px solid black;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
+        }
+
+        .form-card textarea::placeholder {
+            padding-left: 25px;
+            padding-top: 15px;
+            color: black;
+        }
+
+        .contact-btn {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            padding: 10px 0px;
+            width: 100%;
+            bottom: -15px;
+            left: -14.6px;
+            padding: 30px 0px;
+        }
+
+        .sub {
+            position: absolute;
+            bottom: 0px;
+            width: 130px;
+            height: 50px;
+            border: none;
+            background: black;
+            transition: 1s;
+            color: white;
+            border-radius: 5px;
+            font-size: 1.6rem;
+        }
+
+        .res {
+            position: absolute;
+            bottom: 0px;
+            right: -29px;
+            width: 130px;
+            height: 50px;
+            font-size: 1.8rem;
+            border: none;
+            background: black;
+            transition: 1s;
+            color: white;
+            border-radius: 5px;
+        }
+
+    }
+
+    /* contact part start here */
+</style>
+
+<body>
+    <!--contact part start here-->
+    <section class="contact-section" id="contact">
+        <h3 class="section-heading">Contact Me</h3>
+        <hr class="hr-dot">
+        <div class="form-container">
+            <div class="form-card">
+                <form action="https://formspree.io/f/xayzwqwj" method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" class="name" placeholder="Enter your name" required><br>
+                    <label for="name">Email</label><br>
+                    <input type="email" name="email" class="email" placeholder="Enter your email" required><br>
+                    <label for="sms">Message</label><br>
+                    <textarea name="sms" id="sms" placeholder="Enter your massage"></textarea>
+                </form>
+                <div class="contact-btn">
+                    <button type="submit" class="sub">Submit</button>
+                    <button type="reset" class="res">Reset</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--contact part end here-->
+</body>
+
+</html>

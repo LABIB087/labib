@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: white;
+}
+
+.section-heading {
+    font-size: 1.5rem;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.hr-dot {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+    border-style: dotted;
+    border-width: 5px;
+    border-bottom: none;
+}
+
+.navbar {
+    background: #39a4ac;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    position: relative;
+}
+
+.nav-logo h2 {
+    color: white;
+    font-weight: 500;
+}
+
+.bar {
+    margin-right: 15px;
+    color: white;
+    position: absolute;
+    right: 15px;
+}
+
+.drop {
+    position: absolute;
+    top: 15.2vh;
+    width: 100%;
+    background: #39a4ac;
+    left: 0%;
+    height: fit-content;
+    padding: 20px 20px;
+    text-align: center;
+    z-index: 1000;
+}
+.hidden{
+    display: none;
+}
+.drop a {
+    display: block;
+    font-size: 1.5rem;
+    margin: 26px 0px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 1.5s ease;
+}
+
+.desk-menu {
+    display: none;
+}
+
+/* about part start here */
+.home-section {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+}
+
+.home-logo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    right: -259px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.home-logo img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.home-logo-2 {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 50vh;
+    left: 15px;
+    border-radius: 50%;
+}
+
+.home-logo-2 img {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.home-info {
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.home-info h1 {
+    margin-bottom: 20px;
+}
+
+.home-info span {
+    color: #8845f4;
+}
+
+/* about part start here */
+.about-section {
+    width: 100%;
+    height: 103vh;
+    background: #052d2f;
+    color: white;
+    position: relative;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.about-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.about-tit {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.about-info {
+    padding: 5px 15px;
+}
+
+.about-info hr {
+    margin: 10px -10px;
+    border-bottom: none;
+}
+
+.about-btn {
+    text-align: center;
+}
+
+.about-btn a {
+    padding: 10px;
+    width: 80px;
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px;
+    background: #191919;
+    color: white;
+}
+
+.about-dis-btn {
+    display: none;
+}
+
+/* about part start here */
+
+/* project part start here */
+.project-section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.project-container {
+    position: relative;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 60px;
+    padding: 10px;
+    height: 70vh;
+}
+
+.project-card {
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    height: 320px;
+    transition: 1s transform;
+    margin-right: 20px;
+}
+
+.project-card:first-child {
+    margin-left: 20px;
+}
+
+.project-card img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.project-info {
+    padding: 5px 10px;
+}
+
+.project-btn {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.project-btn a {
+    background: black;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    width: 60px;
+}
+
+/* project part end here */
+
+/* skill part start here */
+.skill-section {
+    width: 100%;
+    height: 100vh;
+    background: #5EBBC6;
+    padding: 10px;
+    position: relative;
+}
+
+.skill-section h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.skill-section hr {
+    color: white;
+    width: 60px;
+}
+
+.skill-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+    top: 40%;
+    bottom: 50%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+}
+
+.skill-card {
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 1s;
+}
+
+.skill-card li {
+    margin: 45px 0px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.skill-card li::before {
+    content: '';
+    width: 100%;
+    height: 25px;
+    background: #DBD9D2;
+    position: absolute;
+    top: calc(100% + 7px);
+    border-radius: 1000px 5000px 50px 1000px;
+    margin-left: 6px;
+}
+
+.skill-card li::after {
+    content: '';
+    width: 0%;
+    height: 25px;
+    background: red;
+    position: absolute;
+    left: 6px;
+    top: calc(100% + 7px);
+    border-radius: 1000px 5000px 50px 1000px;
+    /*margin-left: 6px;*/
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+/* skill part end here */
+
+/* footer part start here */
+.footer-section {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.link-container {
+    width: 70%;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.link-container button{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50%;
+    font-size: 23px;
+    text-align: center;
+    background: black;
+    color: white;
+    transition: background 1s;
+}
+.fac{
+    color: #3b5998;
+    background: white;
+    border-radius: 1000%;
+}
+.footer-menu{
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.footer-menu a{
+    margin: 15px 0px;
+    font-size: 1.4rem;
+    color: white;
+    transition: 1s;
+    width: fit-content;
+    padding: 5px;
+    cursor: pointer;
+}
+.footer-dis{
+    width: 100%;
+    padding: 5px 0px;
+    text-align: center;
+    line-height: 13px;
+    font-size: 9px;
+}
+/* footer part end here */
+
+/* Hover part start here */
+
+.drop a:hover {
+    color: black;
+}
+
+.home-logo img:hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+
+.home-logo-2 img:hover {
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+
+.about-btn a:hover {
+    background: #8845f4;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.project-card:hover {
+    transform: scale(0.9);
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+.skill-card li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+        color: red;
+    }
+}
+
+.skill-card li.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+        color: red;
+    }
+}
+
+.skill-card li.js::after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 14%;
+        color: red;
+    }
+}
+
+.skill-card li.boot::after {
+    animation-name: boot;
+}
+
+@keyframes boot {
+    to {
+        width: 5%;
+        color: red;
+    }
+}
+
+.skill-card li.py::after {
+    animation-name: py;
+}
+
+@keyframes py {
+    to {
+        width: 70%;
+        color: red;
+    }
+}
+.link-container button:hover{
+    /*background: lightgrey;*/
+    background: black;
+}
+.fac:hover{
+    color: #3b5998;
+}
+.footer-menu a:hover{
+    padding-left: 20px;
+}
+/* Hover part end here */
