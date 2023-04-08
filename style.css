@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -198,58 +200,51 @@ body {
 /* about part start here */
 
 /* project part start here */
-.project-section {
-    width: 100%;
-    height: 100vh;
-    position: relative;
+.projects {
+  background-image: radial-gradient(circle at center, #8A94FF, #4F5BD5, #2734BF);
+  width: 100%;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
-.project-container {
-    position: relative;
-    display: flex;
-    overflow-x: scroll;
-    margin-top: 60px;
-    padding: 10px;
-    height: 70vh;
+.project_body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 9px;
+  color: white;
+  background-image: radial-gradient(circle at center, #8A94FF, #4F5BD5, #2734BF);
+
 }
 
 .project-card {
-    border-radius: 5px;
-    width: 200px;
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
-    height: 320px;
-    transition: 1s transform;
-    margin-right: 20px;
-}
-
-.project-card:first-child {
-    margin-left: 20px;
+  width: 140px;
+  height: 100px;
+  background: white;
+  border-radius: 5px;
+  margin: 0px 15px;
 }
 
 .project-card img {
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
 }
 
-.project-info {
-    padding: 5px 10px;
+.project_heading{
+  text-align: center;
+  color: white;
+  padding: 15px;
 }
 
-.project-btn {
-    text-align: center;
-    padding: 10px 0px;
+.info{
+  width: 40%;
+  font-size: 13px;
+  text-align: justify;
 }
-
-.project-btn a {
-    background: black;
-    color: white;
-    padding: 6px;
-    border-radius: 5px;
-    width: 60px;
-}
-
 /* project part end here */
 
 /* skill part start here */
