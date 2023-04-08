@@ -203,7 +203,7 @@ body {
 .projects {
   background-image: radial-gradient(circle at center, #8A94FF, #4F5BD5, #2734BF);
   width: 100%;
-  height: 100vh;
+  height: 105vh;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -217,7 +217,7 @@ body {
   padding: 20px 9px;
   color: white;
   background-image: radial-gradient(circle at center, #8A94FF, #4F5BD5, #2734BF);
-
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-card {
@@ -238,12 +238,14 @@ body {
   text-align: center;
   color: white;
   padding: 15px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .info{
   width: 40%;
   font-size: 13px;
   text-align: justify;
+  font-family: 'Poppins', sans-serif;
 }
 /* project part end here */
 
